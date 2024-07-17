@@ -22,8 +22,8 @@ private:
 public:
     Snake()
     {
-        parts.push_back({ nScreenWidth / 2, nScreenHeight / 2 });
-        direction = { 1, 0 };
+        parts.push_back({nScreenWidth / 2, nScreenHeight / 2});
+        direction = {1, 0};
     }
 
     std::pair<int, int> getHead()
@@ -97,7 +97,7 @@ int main()
     auto time2 = std::chrono::system_clock::now();
 
     Snake snake = Snake();
-
+    
     // Generate apple
     int nRandIndex = distr(gen);
     std::pair<int, int> applePos = { nRandIndex / nScreenWidth, nRandIndex % nScreenHeight };
